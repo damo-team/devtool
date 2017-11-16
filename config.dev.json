@@ -1,0 +1,33 @@
+{
+    "version": "0.0.1",
+    "name": "Damo App",
+    "index": "./demo/index.html",
+    "main": "./demo/app.jsx",
+    "server": {
+      "host": "http://localhost:8009"
+    },
+    "jsx": true,
+    "output": {
+      "app": "app",
+      "vendor": "vendor"
+    },
+    "vendors": [
+      "damo-core"
+    ],
+    "provide": {
+      "React": "react",
+      "ReactDOM": "react-dom"
+    },
+    "devtool": "#cheap-source-map",
+    "partition": {
+      "NODE_ENV": "development"
+    },
+    "proxy": [
+      {
+        "host": "http://api.github.com/",
+        "routes": [
+          "/repo"
+        ]
+      }
+    ]
+  }

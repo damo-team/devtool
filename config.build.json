@@ -1,0 +1,20 @@
+{
+    "version": "0.0.1",
+    "name": "Damo Devtool",
+    "main": "./src/index.js",
+    "hash": false,
+    "output": {
+      "file": "none",
+      "version": "",
+      "path": "dist",
+      "app": "devtool",
+      "library": "devtool",
+      "libraryTarget": "umd"
+    },
+    "jsx": true,
+    "noUglify": true,
+    "devtool": "",
+    "partition": {
+      "NODE_ENV": "production"
+    }
+  }
